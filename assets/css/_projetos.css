@@ -9,14 +9,14 @@
     padding: 20vh 0;
 }
 
-.projetos__titulo {
+/* .projetos__titulo {
     font-size: 3.5rem;
     font-family: var(--font-principal);
     color: var(--branco);
     text-transform: uppercase;
     height: 20vh;
     text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
-}
+} */
 
 /* .projetos__container {
     width: 100vw;
@@ -117,4 +117,20 @@
 .desativado {
     opacity: 0;
     cursor: none;
+}
+
+@media screen and (min-width: 0) {
+    .projetos__container__pagina {
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .projeto {
+        width: 280px;
+        height: 200px;
+    }
+
+    .seletor {
+        margin-top: 2rem;
+    }
 }

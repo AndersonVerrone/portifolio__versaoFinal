@@ -15,11 +15,11 @@
 }
 
 .inicio__container {
-    width: 100%;
+    width: 100vw;
     height: 100%;
     position: absolute;
     display: flex;
-    top: 0%;
+    top: 0;
     flex-direction: row-reverse;
     justify-content: space-around;
     align-items: center;
@@ -64,3 +64,34 @@
         opacity: 0;
     }
 }
+
+@media screen and (min-width: 0) {
+    .inicio__container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        gap: 2rem;
+    }
+
+    .container__inicio__img {
+        width: 40%;
+    }
+
+    .inicio__container__textos {
+        width: 100%;
+    }
+
+    .inicio__container__textos__titulo {
+        font-size: 1.8rem;
+        width: 100vw;
+        text-align: center;
+    }
+
+    .inicio__container__textos__cargo {
+        font-size: 1.5rem;
+        width: 100vw;
+        text-align: center;
+    }
+}
+
