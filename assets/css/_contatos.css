@@ -1,6 +1,6 @@
 .contatos {
     width: 100vw;
-    min-height: 100vh !important;
+    min-height: 100vh;
     background: linear-gradient(to bottom, var(--coral) , var(--azul-claro) );
     display: flex;
     flex-direction: column;
@@ -146,7 +146,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 40vh;
+    /* height: 40vh; */
     width: 40vw;
 }
 
@@ -222,7 +222,7 @@
     .contatos__container {
         flex-direction: column;
         width: 80vw;
-        height: 100vh;
+        /* height: 100vh; */
     }
 
     .form__container{
@@ -244,5 +244,7 @@
 
     .contato__container {
         margin: 4rem 0 5rem;
+        gap: 1.5rem;
+        /* height: 100%; */
     }
 }
