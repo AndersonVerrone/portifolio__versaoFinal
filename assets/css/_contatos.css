@@ -1,0 +1,223 @@
+.contatos {
+    width: 100vw;
+    min-height: 100vh !important;
+    background: linear-gradient(to bottom, var(--coral) , var(--azul-claro) );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 20vh 0 2rem;
+}
+
+.contatos__titulo {
+    font-size: 3.5rem;
+    font-family: var(--font-principal);
+    color: var(--branco);
+    text-transform: uppercase;
+    height: 20vh;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.contatos__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-principal);
+}
+
+.form__container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 50vw; */
+    border: 3px solid var(--branco);
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 2rem 3rem;
+}
+
+.form__container>form>p {
+    font-size: 1.5rem;
+    margin: 30px auto 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--branco);
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.form__controle {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 450px;
+}
+
+.form__controle input,
+.form__controle textarea {
+    background-color: transparent;
+    display: block;
+    width: 100%;
+    color: var(--branco);
+    font-size: 1rem;
+}
+
+.form__controle input {
+    border: 0;
+    border-bottom: 2px var(--branco) solid;
+    padding: 0 0 5px 5px;
+    font-weight: normal;
+    font-size: 1.3rem;
+}
+
+.form__controle textarea {
+    border: 2px var(--branco) solid;
+    height: 250px;
+    padding: 10px 5px 5px;
+    border-radius: 5px;
+}
+
+.form__controle input:focus,
+.form__controle input:valid {
+    outline: 0;
+    border-bottom-color: var(--azul-magenta);
+}
+
+.form__controle textarea:focus,
+.form__controle textarea:valid {
+    outline: 0;
+    border-color: var(--azul-magenta);
+}
+
+.form__controle label {
+    position: absolute;
+    top: 3px;
+    left: 5px;
+    pointer-events: none;
+    color: var(--branco);
+    font-weight:600;
+    font-size: 1.5rem;
+}
+
+.form__controle>textarea+label {
+    top: 10px;
+    left: 5px;
+}
+
+.form__controle label span {
+    display: inline-block;
+    font-size: 1rem;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form__controle input:focus + label span,
+.form__controle input:valid + label span {
+    color: var(--azul-magenta);
+    transform: translateY(-35px);
+}
+
+.form__controle textarea:focus + label span,
+.form__controle textarea:valid + label span {
+    color: var(--azul-magenta);
+    transform: translateY(-40px);
+}
+
+.btn {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    border: 2px solid var(--branco);
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    color: var(--branco);
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2);
+    transition: all 1s ease-in;
+}
+
+.btn>p {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    color: var(--azul-magenta);
+    border-color: var(--azul-magenta);
+}
+
+.contato__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+    width: 40vw;
+}
+
+.btn__social {
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 2px solid;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 30px;
+    /* gap: 1rem; */
+    width: 270px;
+    transition: all 1.3s ease-in;
+}
+
+.btn__linkedin {
+    color: #0e76a8;
+    border-color: #0e76a8;    
+}
+
+.btn__linkedin:hover {
+    color: var(--branco);
+    border-color: var(--branco); 
+    background-color: #0e76a8;
+}
+
+.btn__github {
+    color: #000000;
+    border-color: #000000;
+}
+
+.btn__github:hover {
+    color: var(--branco);
+    border-color: var(--branco); 
+    background-color: #000000;
+}
+
+.btn__whatsapp {
+    color: #075e54;
+    border-color: #075e54;
+}
+
+.btn__whatsapp:hover {
+    color: var(--branco);
+    border-color: var(--branco); 
+    background-color: #075e54;
+}
+
+.btn__curriculo {
+    color: var(--azul-magenta);
+    border-color: var(--azul-magenta);
+}
+
+.btn__curriculo:hover {
+    color: var(--branco);
+    border-color: var(--branco); 
+    background-color: var(--azul-magenta);
+}
+
+.btn__social p {
+    margin: 0;
+    font-weight: bold;
+}

@@ -1,0 +1,23 @@
+@import url(./_normaliza.css);
+@import url(./_variaveis.css);
+@import url(./_cabecalho.css);
+@import url(./_inicio.css);
+@import url(./_sobre.css);
+@import url(./_projetos.css);
+@import url(./_habilidades.css);
+@import url(./_contatos.css);
+
+body {
+    min-height: 100vh !important;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+
+@media screen and (min-width: 0) {
+    body {
+        min-width: 100vw !important;
+    }
+}
