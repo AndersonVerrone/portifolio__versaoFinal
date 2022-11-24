@@ -213,7 +213,7 @@
     font-weight: bold;
 }
 
-@media screen and (min-width: 0) {
+@media screen and (max-width: 0) {
     
     .contatos {
         height: 100% !important;
@@ -246,5 +246,29 @@
         margin: 4rem 0 5rem;
         gap: 1.5rem;
         /* height: 100%; */
+    }
+
+    .btn__linkedin {
+        color: var(--branco);
+        border-color: var(--branco); 
+        background-color: #0e76a8
+    }
+
+    .btn__github {
+        color: var(--branco);
+        border-color: var(--branco); 
+        background-color: #000000;
+    }
+
+    .btn__whatsapp {
+        color: var(--branco);
+        border-color: var(--branco); 
+        background-color: #075e54;
+    }
+
+    .btn__curriculo {
+        color: var(--branco);
+        border-color: var(--branco); 
+        background-color: var(--azul-magenta);
     }
 }

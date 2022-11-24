@@ -115,6 +115,10 @@
 }
 
 @media (min-width: 0) {
+    
+    .cabecalho {
+        width: 100vw;
+    }
     .cabecalho__logo {
         width: 40%;
     }

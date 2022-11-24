@@ -42,8 +42,19 @@
     position: relative;
 }
 
+.projeto--gif {
+    width: 280px;
+    height: 200px;
+}
+
+.gif {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
 .projeto--hover {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(250, 250, 250, 0.5);
     width: 350px;
     height: 230px;
     border-radius: 20px;
@@ -56,6 +67,9 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    color: var(--preto);
+    font-family: var(--font-secundaria);
+    font-weight: 600;
 }
 
 .projeto--hover__link {
